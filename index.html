@@ -3,283 +3,214 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sandip Dusadh | Data Scientist & ML Engineer</title>
+<title>Sandip Dusadh | AI Engineer</title>
 
-<meta name="description" content="Sandip Dusadh - Data Scientist specializing in Machine Learning, Deep Learning and AI solutions.">
-
-<link rel="icon" href="images/favicon.ico">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
 <style>
-html{scroll-behavior:smooth;}
-
 :root{
---bg:#0a0f1f;
---text:#ffffff;
---card:rgba(255,255,255,0.05);
---accent:#00f2ff;
+    --bg:#0a0f1f;
+    --text:#ffffff;
+    --card:rgba(255,255,255,0.05);
+    --accent:#00f2ff;
 }
 .light{
---bg:#f4f6f9;
---text:#111;
---card:#ffffff;
---accent:#0066ff;
+    --bg:#f4f6f9;
+    --text:#111;
+    --card:#ffffff;
+    --accent:#0066ff;
 }
 
 *{margin:0;padding:0;box-sizing:border-box;}
+
 body{
-font-family:'Poppins',sans-serif;
-background:var(--bg);
-color:var(--text);
-transition:0.3s;
+    font-family:'Poppins',sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    overflow-x:hidden;
+    transition:0.4s;
+}
+
+/* Particle Canvas */
+#particles{
+    position:fixed;
+    top:0;left:0;
+    width:100%;
+    height:100%;
+    z-index:-1;
 }
 
 /* Navbar */
 nav{
-position:fixed;
-width:100%;
-display:flex;
-justify-content:center;
-align-items:center;
-background:rgba(0,0,0,0.5);
-backdrop-filter:blur(10px);
-padding:15px;
-z-index:1000;
+    position:fixed;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    background:rgba(0,0,0,0.4);
+    backdrop-filter:blur(10px);
+    padding:15px;
+    z-index:1000;
 }
 nav a{
-color:var(--text);
-margin:0 20px;
-text-decoration:none;
-font-weight:600;
+    color:var(--text);
+    margin:0 20px;
+    text-decoration:none;
+    font-weight:600;
 }
-nav a:hover{color:var(--accent);}
 .toggle{
-position:absolute;
-right:20px;
-background:none;
-border:none;
-color:var(--text);
-cursor:pointer;
+    position:absolute;
+    right:10px;
+    cursor:pointer;
 }
 
 /* Hero */
 header{
-text-align:center;
-padding:200px 20px 100px;
+    text-align:center;
+    padding:235px 20px 100px;
 }
 header h1{
-font-family:'Orbitron';
-font-size:48px;
-background:linear-gradient(90deg,#00f2ff,#ff00ff);
--webkit-background-clip:text;
--webkit-text-fill-color:transparent;
+    font-family:'Orbitron',sans-serif;
+    font-size:48px;
+    background:linear-gradient(90deg,#00f2ff,#ff00ff);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
 }
-.typing{margin-top:15px;font-size:20px;}
+.typing{
+    margin-top:15px;
+    font-size:22px;
+}
 .btn{
-display:inline-block;
-margin:10px;
-padding:12px 28px;
-border-radius:30px;
-background:var(--accent);
-color:#000;
-text-decoration:none;
-font-weight:600;
+    display:inline-block;
+    margin-top:30px;
+    padding:12px 28px;
+    border-radius:30px;
+    background:var(--accent);
+    color:#000;
+    font-weight:600;
+    text-decoration:none;
+    transition:0.3s;
+}
+.btn:hover{
+    box-shadow:0 0 20px var(--accent);
+    transform:translateY(-3px);
 }
 
-/* Sections */
-section{padding:100px 30px;max-width:1100px;margin:auto;}
-h2{text-align:center;font-family:'Orbitron';margin-bottom:40px;}
+section{
+    padding:80px 20px;
+    max-width:1100px;
+    margin:auto;
+}
+h2{
+    text-align:center;
+    font-family:'Orbitron';
+    margin-bottom:50px;
+}
 
 /* Skills */
-.skill{margin-bottom:25px;font-weight:600;}
+.skill{
+    margin-bottom:20px;
+}
 .progress{
-height:10px;
-background:rgba(255,255,255,0.1);
-border-radius:10px;
-margin-top:8px;
-overflow:hidden;
+    height:10px;
+    background:#333;
+    border-radius:10px;
 }
 .progress span{
-display:block;
-height:100%;
-width:0;
-background:var(--accent);
-border-radius:10px;
-transition:1.5s ease;
+    display:block;
+    height:100%;
+    width:0;
+    background:var(--accent);
+    border-radius:10px;
+    transition:2s;
 }
 
 /* Projects */
 .projects{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:30px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
 }
 .card{
-background:var(--card);
-border-radius:20px;
-overflow:hidden;
-transition:0.3s;
+    background:var(--card);
+    backdrop-filter:blur(10px);
+    border-radius:20px;
+    overflow:hidden;
+    cursor:pointer;
+    transition:0.4s;
 }
 .card:hover{
-transform:translateY(-5px);
-box-shadow:0 0 20px var(--accent);
+    box-shadow:0 0 25px var(--accent);
 }
 .card img{
-width:100%;
-height:200px;
-object-fit:cover;
+    width:100%;
+    height:200px;
+    object-fit:cover;
 }
-.card-content{padding:20px;}
-.card-links a{
-margin-right:15px;
-color:var(--accent);
-text-decoration:none;
-font-weight:600;
-}
-
-/* Blog */
-.blog-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:30px;
-}
-.blog-card{
-background:var(--card);
-padding:25px;
-border-radius:20px;
-cursor:pointer;
-transition:0.3s;
-}
-.blog-card:hover{
-transform:translateY(-5px);
-box-shadow:0 0 20px var(--accent);
+.card-content{
+    padding:20px;
 }
 
 /* Modal */
 .modal{
-display:none;
-position:fixed;
-inset:0;
-background:rgba(0,0,0,0.8);
-justify-content:center;
-align-items:center;
-z-index:2000;
+    display:none;
+    position:fixed;
+    top:0;left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.8);
+    justify-content:center;
+    align-items:center;
 }
 .modal-content{
-background: var(--bg);
-color: var(--text);
-padding:30px;
-border-radius:20px;
-max-width:600px;
-width:90%;
-position:relative;
-box-shadow:0 0 30px rgba(0,0,0,0.5);
+    background:#111;
+    padding:30px;
+    border-radius:20px;
+    max-width:600px;
+    text-align:center;
+}
+.modal img{
+    width:100%;
+    margin-bottom:20px;
 }
 
-.close-btn{
-position:absolute;
-top:15px;
-right:20px;
-font-size:22px;
-cursor:pointer;
-color:var(--accent);
+footer{
+    text-align:center;
+    padding:30px;
+    opacity:0.6;
 }
-.close-btn:hover{
-transform:scale(1.2);
-}
-
-/* Contact */
-form{
-max-width:600px;
-margin:auto;
-display:flex;
-flex-direction:column;
-gap:15px;
-}
-input,textarea{
-padding:12px;
-border-radius:8px;
-border:none;
-outline:none;
-}
-button{
-padding:12px;
-border:none;
-border-radius:8px;
-background:var(--accent);
-font-weight:600;
-cursor:pointer;
-}
-
-/* Social */
-.social{text-align:center;margin-top:20px;}
-.social a{
-margin:0 10px;
-font-size:22px;
-color:var(--text);
-}
-.social a:hover{color:var(--accent);}
 
 @media(max-width:768px){
-
-header{
-padding:160px 20px 80px;
+header h1{font-size:35px;}
 }
-
-header h1{
-font-size:32px;
-}
-
-.modal-content{
-width:95%;
-padding:20px;
-}
-
-section{
-padding:80px 20px;
-}
-
-nav a{
-margin:0 10px;
-font-size:14px;
-}
-
-}
-/* Footer */
-footer{text-align:center;padding:30px;opacity:0.7;}
 </style>
 </head>
-
 <body>
+
+<canvas id="particles"></canvas>
 
 <nav>
 <a href="#about">About</a>
 <a href="#skills">Skills</a>
 <a href="#projects">Projects</a>
-<a href="#blog">Blog</a>
 <a href="#contact">Contact</a>
-<button class="toggle" onclick="toggleMode()">⚡</button>
+<div class="toggle" onclick="toggleMode()">⚡</div>
 </nav>
 
 <header>
 <h1>Sandip Dusadh</h1>
 <div class="typing" id="typing"></div>
-<a href="Resume.pdf" target="_blank" class="btn">View Resume</a>
-<a href="Resume.pdf" download class="btn">Download Resume</a>
+<a href="Resume.pdf" class="btn" download>Download Resume</a>
 </header>
 
 <section id="about">
 <h2>About Me</h2>
-<p style="text-align:center;max-width:750px;margin:auto;">
-Data Science enthusiast specializing in Machine Learning and Deep Learning.
-Passionate about building AI-driven solutions that solve real-world problems.
+<p style="text-align:center;max-width:700px;margin:auto;">
+AI & Machine Learning enthusiast building intelligent systems and scalable data solutions.
 </p>
 </section>
 
 <section id="skills">
-<h2>Core Skills</h2>
+<h2>Skills</h2>
 <div class="skill">Python<div class="progress"><span data-width="90%"></span></div></div>
 <div class="skill">Machine Learning<div class="progress"><span data-width="85%"></span></div></div>
 <div class="skill">Deep Learning<div class="progress"><span data-width="80%"></span></div></div>
@@ -287,107 +218,76 @@ Passionate about building AI-driven solutions that solve real-world problems.
 </section>
 
 <section id="projects">
-<h2>Projects</h2>
-
+<h2>AI Projects</h2>
 <div class="projects">
 
-<div class="card">
-<img src="images/catdog.jpeg" alt="Cat vs Dog CNN">
+<div class="card" onclick="openModal('images/catdog.png','CNN Classifier Project')">
+<img src="images/catdog.jpeg">
 <div class="card-content">
 <h3>Cat vs Dog CNN</h3>
-<p>Built CNN using TensorFlow. Achieved 92% validation accuracy with image augmentation.</p>
-<div class="card-links">
-<a href="https://github.com/D10sanp/Explainable-Cat-vs-Dog-Image-Classification-Using-CNN" target="_blank">GitHub</a>
-</div>
+<p>Explainable Deep Learning model.</p>
 </div>
 </div>
 
-<div class="card">
-<img src="images/avatar.jpeg" alt="3D Avatar Generator">
+<div class="card" onclick="openModal('images/avatar.png','3D Avatar Generator')">
+<img src="images/avatar.jpeg">
 <div class="card-content">
 <h3>3D Avatar Generator</h3>
-<p>AI-based 3D reconstruction pipeline using computer vision techniques.</p>
-<div class="card-links">
-<a href="https://github.com/D10sanp/3D-Avatar" target="_blank">GitHub</a>
-</div>
+<p>AI-based 3D reconstruction pipeline.</p>
 </div>
 </div>
 
-<div class="card">
-<img src="images/loan.png" alt="Loan Prediction Model">
+<div class="card" onclick="openModal('images/loan.png','Loan Prediction Model')">
+<img src="images/loan.png">
 <div class="card-content">
-<h3>Loan Prediction Model</h3>
-<p>ML classification using Random Forest & Logistic Regression. 87% accuracy.</p>
-<div class="card-links">
-<a href="https://github.com/D10sanp/loan_Eligibility" target="_blank">GitHub</a>
-</div>
+<h3>Loan Prediction</h3>
+<p>ML classification system.</p>
 </div>
 </div>
 
-</div>
-</section>
-
-<section id="blog">
-<h2>Technical Blog</h2>
-
-<div class="blog-grid">
-
-<div class="blog-card" onclick="openBlog('cnn')">
-<h3>How CNN Works</h3>
-<p>Understanding convolution and feature extraction.</p>
-</div>
-
-<div class="blog-card" onclick="openBlog('bias')">
-<h3>Understanding Bias-Variance Tradeoff</h3>
-<p>Underfitting vs Overfitting explained.</p>
-</div>
-
-<div class="blog-card" onclick="openBlog('eda')">
-<h3>EDA on Loan Dataset</h3>
-<p>Exploratory Data Analysis and feature engineering techniques.</p>
-</div>
-
-</div>
-<div class="modal" id="blogModal">
-  <div class="modal-content" id="blogContent"></div>
 </div>
 </section>
 
 <section id="contact">
-<h2>Contact Me</h2>
-<form id="contact-form">
-<input type="text" name="user_name" placeholder="Your Name" required>
-<input type="email" name="user_email" placeholder="Your Email" required>
-<textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-<button type="submit">Send Message</button>
-</form>
-
-<div class="social">
-<a href="https://www.linkedin.com/in/sandip-dusadh-83264028a" target="_blank"><i class="fab fa-linkedin"></i></a>
-<a href="https://github.com/D10Sanp" target="_blank"><i class="fab fa-github"></i></a>
-</div>
+<h2>Connect</h2>
+<p style="text-align:center;">
+📧 sandipdusadh50@gmail.com <br>
+📱 +91 9170973194
+</p>
 </section>
 
 <footer>
-© 2026 Sandip Dusadh | Machine Learning | Deep Learning | Data Analytics
+© 2026 Sandip Dusadh | Aspiring Data Scientist | Data Science & Analytics
 </footer>
 
-<div class="modal" id="blogModal" onclick="closeBlog()">
-<div class="modal-content" id="blogContent"></div>
+<div class="modal" id="modal" onclick="closeModal()">
+<div class="modal-content">
+<img id="modal-img">
+<h3 id="modal-title"></h3>
+</div>
 </div>
 
 <script>
-function toggleMode(){document.body.classList.toggle("light");}
+
+/* Dark Mode */
+function toggleMode(){
+document.body.classList.toggle("light");
+}
 
 /* Typing */
-const roles=["AI Engineer","ML Developer","Deep Learning Specialist"];
-let i=0,j=0,deleting=false;
+const roles=["AI Engineer","ML Developer","Deep Learning Explorer"];
+let i=0,j=0,current="",deleting=false;
 function type(){
 let el=document.getElementById("typing");
-if(!deleting && j<=roles[i].length){el.textContent=roles[i].substring(0,j++);}
-else if(deleting && j>=0){el.textContent=roles[i].substring(0,j--);}
+if(!deleting && j<=roles[i].length){
+current=roles[i].substring(0,j++);
+el.textContent=current;
+}else if(deleting && j>=0){
+current=roles[i].substring(0,j--);
+el.textContent=current;
+}
 if(j==roles[i].length) deleting=true;
-if(deleting && j==0){deleting=false;i=(i+1)%roles.length;}
+if(deleting && j==0){ deleting=false;i=(i+1)%roles.length;}
 setTimeout(type,100);
 }
 type();
@@ -395,55 +295,52 @@ type();
 /* Skills Animation */
 window.addEventListener("scroll",()=>{
 document.querySelectorAll(".progress span").forEach(bar=>{
-if(bar.getBoundingClientRect().top < window.innerHeight-50){
+if(bar.getBoundingClientRect().top<window.innerHeight){
 bar.style.width=bar.getAttribute("data-width");
 }
 });
 });
 
-/* Blog */
-const blogModal = document.getElementById("blogModal");
-const blogContent = document.getElementById("blogContent");
-
-function openBlog(type){
-let content="";
-
-if(type==="cnn"){
-content="<h2>How CNN Works</h2><p>Convolutional Neural Networks use filters to extract spatial features from images followed by pooling and fully connected layers. They are widely used in computer vision tasks.</p>";
+/* Modal */
+function openModal(img,title){
+document.getElementById("modal").style.display="flex";
+document.getElementById("modal-img").src=img;
+document.getElementById("modal-title").innerText=title;
+}
+function closeModal(){
+document.getElementById("modal").style.display="none";
 }
 
-if(type==="bias"){
-content="<h2>Bias-Variance Tradeoff</h2><p>High bias leads to underfitting while high variance leads to overfitting. Proper model complexity and regularization balance both.</p>";
-}
+/* Simple Particles */
+const canvas=document.getElementById("particles");
+const ctx=canvas.getContext("2d");
+canvas.width=window.innerWidth;
+canvas.height=window.innerHeight;
 
-if(type==="eda"){
-content="<h2>EDA on Loan Dataset</h2><p>Performed data cleaning, visualization, missing value handling and feature engineering before model training.</p>";
-}
-content = "<span class='close-btn' onclick='closeBlog()'>✖</span>" + content;
-
-blogContent.innerHTML = content;
-blogModal.style.display = "flex";
-}
-
-function closeBlog(){
-blogModal.style.display = "none";
-}
-
-/* Close when clicking outside content */
-blogModal.addEventListener("click", function(e){
-if(e.target === blogModal){
-closeBlog();
-}
+let particles=[];
+for(let i=0;i<80;i++){
+particles.push({
+x:Math.random()*canvas.width,
+y:Math.random()*canvas.height,
+r:2,
+dx:(Math.random()-0.5),
+dy:(Math.random()-0.5)
 });
-
-/* EmailJS */
-emailjs.init("YOUR_PUBLIC_KEY");
-document.getElementById("contact-form").addEventListener("submit",function(e){
-e.preventDefault();
-emailjs.sendForm("YOUR_SERVICE_ID","YOUR_TEMPLATE_ID",this)
-.then(()=>alert("Message Sent Successfully!"),
-()=>alert("Failed to send message."));
+}
+function animate(){
+ctx.clearRect(0,0,canvas.width,canvas.height);
+particles.forEach(p=>{
+ctx.beginPath();
+ctx.arc(p.x,p.y,p.r,0,Math.PI*2);
+ctx.fillStyle="#00f2ff";
+ctx.fill();
+p.x+=p.dx;
+p.y+=p.dy;
 });
+requestAnimationFrame(animate);
+}
+animate();
+
 </script>
 
 </body>
