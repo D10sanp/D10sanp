@@ -57,9 +57,9 @@
 
 # 📊 GitHub Stats:
 
-![Stats](https://github-readme-stats.vercel.app/api?username=D10sanp&show_icons=true&theme=radical&hide_border=true&count_private=true&include_all_commits=true)
+![Stats](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=D10sanp&show_icons=true&theme=radical)
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=D10sanp&layout=compact&theme=radical&hide_border=true)
+![Top Langs](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=D10sanp&layout=compact&theme=radical)
 
 ![Streak](https://streak-stats.demolab.com?user=D10sanp&theme=radical&hide_border=true)
 
