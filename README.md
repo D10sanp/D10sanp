@@ -56,9 +56,11 @@
 
 
 # 📊 GitHub Stats:
-![](https://github-readme-stats.vercel.app/api?username=D10sanp&theme=neon&hide_border=false&include_all_commits=false&count_private=false)<br/>
-![](https://nirzak-streak-stats.vercel.app/?user=D10sanp&theme=neon&hide_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=D10sanp&theme=neon&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
+![Stats](https://github-readme-stats.vercel.app/api?username=D10sanp&theme=neon&count_private=true)
+
+![Streak](https://nirzak-streak-stats.vercel.app/?user=D10sanp&theme=neon)
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=D10sanp&theme=neon&layout=compact)
 
 ---
 [![](https://visitcount.itsvg.in/api?id=D10sanp&icon=0&color=3)](https://visitcount.itsvg.in)
