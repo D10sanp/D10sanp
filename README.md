@@ -1,5 +1,5 @@
 ## Hi there 👋 I'M Sandip Dusadh
-
+### 🚀 Aspiring Data Scientist | Machine Learning Enthusiast | Python Developer
 # 💫 About Me:
 <br>🔭 I’m currently working on  <br>Data science projects and exploring real-world applications of machine learning.<br><br>👯 I’m looking to collaborate on  <br>Data science, machine learning, and beginner-friendly deep learning projects.<br><br>🤝 I’m looking for help with  <br>Understanding advanced deep learning concepts and building end-to-end ML/DL models.<br><br>🌱 I’m currently learning  <br>Deep Learning, Neural Networks, and model optimization techniques.<br><br>💬 Ask me about  <br>Python, Data Science fundamentals, Machine Learning, and exploratory data analysis.<br><br>⚡ Fun fact  <br>I enjoy turning raw data into meaningful insights and visual stories 📊
 
@@ -56,9 +56,12 @@
 
 
 # 📊 GitHub Stats:
-![](https://github-readme-stats.vercel.app/api?username=D10sanp&theme=neon&hide_border=false&include_all_commits=false&count_private=false)<br/>
-![](https://nirzak-streak-stats.vercel.app/?user=D10sanp&theme=neon&hide_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=D10sanp&theme=neon&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
+
+![Stats](https://github-readme-stats.vercel.app/api?username=D10sanp&show_icons=true&theme=radical)
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=D10sanp&layout=compact&theme=radical)
+
+![Streak](https://streak-stats.demolab.com?user=D10sanp&theme=radical&hide_border=true)
 
 ---
 [![](https://visitcount.itsvg.in/api?id=D10sanp&icon=0&color=3)](https://visitcount.itsvg.in)
