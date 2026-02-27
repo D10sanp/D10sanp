@@ -64,6 +64,8 @@ nav a {
     margin: 0 20px;
     text-decoration: none;
     font-weight: 600;
+    position: relative;
+    transition: all 0.4s ease;
 }
 
 .toggle {
@@ -85,6 +87,20 @@ header h1 {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    transition: all 0.4s ease;
+    display: inline-block;
+    cursor: pointer;
+}
+
+header h1:hover {
+    transform: scale(1.05);
+    background: linear-gradient(90deg, #00f5ff, #00ff88, #ff00ff);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shimmer 2s linear infinite;
+    text-shadow: 0 0 20px rgba(0, 255, 255, 0.6);
 }
 
 .typing {
@@ -92,28 +108,30 @@ header h1 {
     font-size: 22px;
 }
 
+/* Buttons */
 .btn {
     display: inline-block;
     margin-top: 30px;
     padding: 12px 28px;
     border-radius: 30px;
-    background: var(--accent);
-    color: #000;
+    background: transparent;
+    color: var(--accent);
+    border: 2px solid var(--accent);
     font-weight: 600;
     text-decoration: none;
     transition: 0.3s;
 }
 
 .btn:hover {
-    box-shadow: 0 0 20px var(--accent);
+    background: rgba(0, 242, 255, 0.08);
+    box-shadow: 0 0 15px var(--accent);
     transform: translateY(-3px);
 }
 
-/* Resume Button */
 .resume-btn {
     background: transparent;
-    color: #00f2ff;
-    border: 2px solid #00f2ff;
+    color: var(--accent);
+    border: 2px solid var(--accent);
     padding: 12px 28px;
     border-radius: 30px;
     font-weight: 600;
@@ -124,10 +142,7 @@ header h1 {
 
 .resume-btn:hover {
     background: rgba(0, 242, 255, 0.1);
-    box-shadow:
-        0 0 10px #00f2ff,
-        0 0 25px #00f2ff,
-        0 0 50px #00f2ff;
+    box-shadow: 0 0 15px var(--accent);
     transform: translateY(-4px);
 }
 
@@ -260,7 +275,14 @@ h2 {
     gap: 15px;
 }
 
-.contact-form input,
+.contact-form input{
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: var(--card);
+    color: var(--text);
+}
 .contact-form textarea {
     padding: 12px;
     border-radius: 10px;
@@ -268,6 +290,8 @@ h2 {
     outline: none;
     background: var(--card);
     color: var(--text);
+    min-height: 160px;
+    resize: vertical;
 }
 
 .contact-form input:focus,
@@ -290,14 +314,16 @@ h2 {
     text-decoration: none;
     padding: 10px 18px;
     border-radius: 30px;
-    background: var(--accent);
-    color: #000;
+    background: transparent;
+    color: var(--accent);
+    border: 2px solid var(--accent);
     font-weight: 600;
     transition: 0.3s;
 }
 
 .social-links a:hover {
     transform: translateY(-3px);
+    background: rgba(0, 242, 255, 0.08);
     box-shadow: 0 0 15px var(--accent);
 }
 
@@ -306,6 +332,49 @@ footer {
     text-align: center;
     padding: 30px;
     opacity: 0.6;
+}
+
+/* Animations */
+nav a:hover {
+    background: linear-gradient(90deg, #00f5ff, #00ff88, #ff00ff);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shimmer 2s linear infinite;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.6);
+    transform: scale(1.05);
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: 0% center;
+    }
+
+    100% {
+        background-position: 200% center;
+    }
+}
+
+/* Light Mode Animations */
+.light header h1:hover {
+    background: linear-gradient(90deg, #4a90e2, #00c6ff, #4a90e2);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shimmer 2s linear infinite;
+    text-shadow: 0 0 10px rgba(74, 144, 226, 0.4);
+}
+
+.light nav a:hover {
+    background: linear-gradient(90deg, #4a90e2, #00c6ff, #4a90e2);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shimmer 2s linear infinite;
+    text-shadow: 0 0 6px rgba(74, 144, 226, 0.4);
 }
 
 /* Responsive */
@@ -369,110 +438,11 @@ footer {
         width: 100%;
         justify-content: center;
     }
-}
 
-
-
-
-/* ============================= */
-/* Neon/Futuristic Animations */
-/* Works for Header, Navbar, and Buttons */
-/* ============================= */
-
-/* Header H1 */
-header h1 {
-    font-size: 3rem;
-    font-weight: 700;
-    transition: all 0.4s ease;
-    display: inline-block;
-    cursor: pointer;
-}
-
-header h1:hover {
-    transform: scale(1.05);
-    background: linear-gradient(90deg, #00f5ff, #00ff88, #ff00ff);
-    background-size: 200% auto;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: shimmer 2s linear infinite;
-    text-shadow: 0 0 20px rgba(0, 255, 255, 0.6);
-}
-
-/* Navbar Links */
-nav a {
-    position: relative;
-    transition: all 0.4s ease;
-}
-
-nav a:hover {
-    background: linear-gradient(90deg, #00f5ff, #00ff88, #ff00ff);
-    background-size: 200% auto;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: shimmer 2s linear infinite;
-    text-shadow: 0 0 10px rgba(0, 255, 255, 0.6);
-    transform: scale(1.05);
-}
-
-/* Buttons (Resume & Social) */
-.btn, .resume-btn, .social-links a {
-    transition: all 0.4s ease;
-}
-
-.btn:hover, .resume-btn:hover, .social-links a:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 15px var(--accent), 0 0 30px var(--accent);
-    animation: pulseBtn 1.5s infinite;
-}
-
-/* Keyframes */
-@keyframes shimmer {
-    0% { background-position: 0% center; }
-    100% { background-position: 200% center; }
-}
-
-@keyframes pulseBtn {
-    0% { box-shadow: 0 0 10px var(--accent); }
-    50% { box-shadow: 0 0 25px var(--accent); }
-    100% { box-shadow: 0 0 10px var(--accent); }
-}
-
-/* Light Mode Adjustments */
-.light header h1:hover {
-    background: linear-gradient(90deg, #4a90e2, #00c2ff, #4a90e2);
-    text-shadow: 0 0 15px rgba(74, 144, 226, 0.6);
-}
-
-.light nav a:hover {
-    background: linear-gradient(90deg, #4a90e2, #00c2ff, #4a90e2);
-    text-shadow: 0 0 10px rgba(74, 144, 226, 0.6);
-}
-
-.light .btn:hover, .light .resume-btn:hover, .light .social-links a:hover {
-    box-shadow: 0 0 15px var(--accent), 0 0 25px var(--accent);
-}
-
-/* Mobile Touch Support */
-@media (hover: none) {
-    header h1 {
-        -webkit-text-fill-color: var(--accent);
-        color: var(--accent);
-        text-shadow: 0 0 8px var(--accent);
-    }
-    nav a {
-        -webkit-text-fill-color: var(--accent);
-        color: var(--accent);
-        text-shadow: 0 0 8px var(--accent);
-    }
-    .btn, .resume-btn, .social-links a:active {
-        transform: scale(1.05);
-        box-shadow: 0 0 20px var(--accent), 0 0 40px var(--accent);
-    }
-}
-
-/* Optional: Smooth scaling for smaller screens */
-@media (max-width: 768px) {
-    header h1, nav a, .btn, .resume-btn, .social-links a {
-        transition: transform 0.3s ease, text-shadow 0.3s ease, box-shadow 0.3s ease;
+    header h1:hover,
+    nav a:hover {
+        animation: none;
+        text-shadow: none;
+        transform: none;
     }
 }
