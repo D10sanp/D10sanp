@@ -1,73 +1,89 @@
 document.addEventListener("DOMContentLoaded", function () {
 
     /* ============================= */
-    /* Dark Mode */
+    /* Dark Mode Toggle */
     /* ============================= */
-    function toggleMode() {
+    window.toggleMode = function () {
         document.body.classList.toggle("light");
-    }
-    window.toggleMode = toggleMode;
+    };
 
 
     /* ============================= */
     /* Typing Animation */
     /* ============================= */
     const roles = ["AI Engineer", "ML Developer", "Deep Learning Explorer"];
-    let i = 0, j = 0, current = "", deleting = false;
+    const typingEl = document.getElementById("typing");
 
-    function type() {
-        const el = document.getElementById("typing");
-        if (!el) return;
+    if (typingEl) {
+        let i = 0, j = 0;
+        let deleting = false;
 
-        if (!deleting && j <= roles[i].length) {
-            current = roles[i].substring(0, j++);
-        } else if (deleting && j >= 0) {
-            current = roles[i].substring(0, j--);
+        function type() {
+            const currentRole = roles[i];
+
+            if (!deleting) {
+                typingEl.textContent = currentRole.substring(0, j++);
+                if (j > currentRole.length) {
+                    deleting = true;
+                    setTimeout(type, 1000);
+                    return;
+                }
+            } else {
+                typingEl.textContent = currentRole.substring(0, j--);
+                if (j < 0) {
+                    deleting = false;
+                    i = (i + 1) % roles.length;
+                }
+            }
+
+            setTimeout(type, deleting ? 50 : 100);
         }
 
-        el.textContent = current;
-
-        if (j === roles[i].length) deleting = true;
-        if (deleting && j === 0) {
-            deleting = false;
-            i = (i + 1) % roles.length;
-        }
-
-        setTimeout(type, 100);
+        type();
     }
-    type();
 
 
     /* ============================= */
     /* Skills Animation */
     /* ============================= */
-    window.addEventListener("scroll", () => {
-        document.querySelectorAll(".progress span").forEach(bar => {
-            if (bar.getBoundingClientRect().top < window.innerHeight) {
-                bar.style.width = bar.getAttribute("data-width");
+    const progressBars = document.querySelectorAll(".progress span");
+
+    function animateSkills() {
+        progressBars.forEach(bar => {
+            if (bar.getBoundingClientRect().top < window.innerHeight - 50) {
+                bar.style.width = bar.dataset.width;
             }
         });
-    });
+    }
+
+    window.addEventListener("scroll", animateSkills);
+    animateSkills(); // run once on load
 
 
     /* ============================= */
     /* Modal */
     /* ============================= */
+    const modal = document.getElementById("modal");
+    const modalImg = document.getElementById("modal-img");
+    const modalTitle = document.getElementById("modal-title");
+
     window.openModal = function (img, title) {
-        document.getElementById("modal").style.display = "flex";
-        document.getElementById("modal-img").src = img;
-        document.getElementById("modal-title").innerText = title;
+        if (!modal) return;
+        modal.style.display = "flex";
+        modalImg.src = img;
+        modalTitle.textContent = title;
     };
 
     window.closeModal = function () {
-        document.getElementById("modal").style.display = "none";
+        if (modal) modal.style.display = "none";
     };
 
 
     /* ============================= */
-    /* Particles */
+    /* Particles Background */
     /* ============================= */
     const canvas = document.getElementById("particles");
+
     if (canvas) {
         const ctx = canvas.getContext("2d");
 
@@ -79,30 +95,32 @@ document.addEventListener("DOMContentLoaded", function () {
         resizeCanvas();
         window.addEventListener("resize", resizeCanvas);
 
-        let particles = [];
-
-        for (let i = 0; i < 80; i++) {
-            particles.push({
-                x: Math.random() * canvas.width,
-                y: Math.random() * canvas.height,
-                r: 2,
-                dx: (Math.random() - 0.5),
-                dy: (Math.random() - 0.5)
-            });
-        }
+        const particles = Array.from({ length: 70 }, () => ({
+            x: Math.random() * canvas.width,
+            y: Math.random() * canvas.height,
+            r: 2,
+            dx: (Math.random() - 0.5),
+            dy: (Math.random() - 0.5)
+        }));
 
         function animate() {
             ctx.clearRect(0, 0, canvas.width, canvas.height);
 
+            const accent = getComputedStyle(document.body)
+                .getPropertyValue('--accent');
+
             particles.forEach(p => {
                 ctx.beginPath();
                 ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-                ctx.fillStyle = getComputedStyle(document.body)
-                    .getPropertyValue('--accent');
+                ctx.fillStyle = accent;
                 ctx.fill();
 
                 p.x += p.dx;
                 p.y += p.dy;
+
+                // bounce effect
+                if (p.x < 0 || p.x > canvas.width) p.dx *= -1;
+                if (p.y < 0 || p.y > canvas.height) p.dy *= -1;
             });
 
             requestAnimationFrame(animate);
@@ -116,6 +134,7 @@ document.addEventListener("DOMContentLoaded", function () {
     /* Email Obfuscation */
     /* ============================= */
     const emailElement = document.getElementById("email");
+
     if (emailElement) {
         const user = "sandipdusadh50";
         const domain = "gmail.com";
@@ -125,53 +144,89 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     /* ============================= */
-    /* EmailJS Contact Form */
-    /* ============================= */
-    if (typeof emailjs !== "undefined") {
+/* EmailJS Contact Form PREMIUM */
+/* ============================= */
+if (typeof emailjs !== "undefined") {
 
-        emailjs.init("rnTrmOTY0qW2UVjOK");
+    emailjs.init("rnTrmOTY0qW2UVjOK");
 
-        const form = document.getElementById("contact-form");
+    const form = document.getElementById("contact-form");
+    const sendBtn = document.getElementById("sendBtn");
 
-        if (form) {
-            form.addEventListener("submit", function (event) {
-                event.preventDefault();
+    if (form && sendBtn) {
 
-                const submitButton = form.querySelector("button[type='submit']");
-                submitButton.disabled = true;
-                submitButton.textContent = "Sending... ⏳";
+        form.addEventListener("submit", function (event) {
+            event.preventDefault();
 
-                emailjs.sendForm(
-                    "service_hma0mfl",
-                    "template_pyeslng",
-                    this
-                ).then(function () {
+            startLoading();
 
-                    let successMsg = document.createElement("p");
-                    successMsg.textContent = "✅ Message sent successfully!";
-                    successMsg.style.color = "green";
-                    form.appendChild(successMsg);
-
-                    form.reset();
-                    submitButton.disabled = false;
-                    submitButton.textContent = "Send Message";
-
-                    setTimeout(() => successMsg.remove(), 5000);
-
-                }).catch(function () {
-
-                    let errorMsg = document.createElement("p");
-                    errorMsg.textContent = "❌ Failed to send message. Please try again.";
-                    errorMsg.style.color = "red";
-                    form.appendChild(errorMsg);
-
-                    submitButton.disabled = false;
-                    submitButton.textContent = "Send Message";
-
-                    setTimeout(() => errorMsg.remove(), 5000);
-                });
+            emailjs.sendForm(
+                "service_hma0mfl",
+                "template_pyeslng",
+                form
+            ).then(() => {
+                showSuccess();
+                form.reset();
+            }).catch(() => {
+                showError();
             });
+        });
+
+        /* --- Button States --- */
+        function startLoading() {
+            sendBtn.classList.remove("success", "error");
+            sendBtn.classList.add("loading");
+            sendBtn.disabled = true;
+            sendBtn.textContent = "Sending... ⏳";
+        }
+
+        function showSuccess() {
+            sendBtn.classList.remove("loading", "error");
+            sendBtn.classList.add("success");
+            sendBtn.textContent = "Sent ✅";
+            sendBtn.disabled = true;
+
+            setTimeout(() => {
+                resetButton();
+            }, 2000);
+        }
+
+        function showError() {
+            sendBtn.classList.remove("loading", "success");
+            sendBtn.classList.add("error");
+            sendBtn.textContent = "Failed ❌";
+            sendBtn.disabled = false;
+
+            // Optional: show error message under form
+            showMessage("Failed to send message. Try again!", "red");
+
+            setTimeout(() => {
+                sendBtn.classList.remove("error");
+                sendBtn.textContent = "Send Message";
+            }, 2000);
+        }
+
+        function resetButton() {
+            sendBtn.classList.remove("success", "loading", "error");
+            sendBtn.disabled = false;
+            sendBtn.textContent = "Send Message";
+        }
+
+        /* --- Optional Error Message Under Form --- */
+        function showMessage(text, color) {
+            const existingMsg = form.querySelector(".form-message");
+            if (existingMsg) existingMsg.remove();
+
+            const msg = document.createElement("p");
+            msg.textContent = text;
+            msg.className = "form-message";
+            msg.style.color = color;
+            msg.style.marginTop = "10px";
+            form.appendChild(msg);
+
+            setTimeout(() => msg.remove(), 4000);
         }
     }
+}
 
 });

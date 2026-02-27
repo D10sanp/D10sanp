@@ -438,11 +438,150 @@ nav a:hover {
         width: 100%;
         justify-content: center;
     }
+}
+/* ============================= */
+/* MOBILE CONTACT FORM FIX */
+/* ============================= */
 
-    header h1:hover,
-    nav a:hover {
+@media (max-width: 768px) {
+
+    .contact-form {
+        width: 100%;
+        gap: 18px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        font-size: 16px; /* Prevent zoom on iPhone */
+        padding: 14px;
+    }
+
+    .contact-form textarea {
+        min-height: 160px;
+        resize: vertical;
+    }
+
+    .contact-form .btn {
+        width: 100%;
+        padding: 14px;
+        font-size: 16px;
+    }
+}
+
+/* ============================= */
+/* PREMIUM SEND BUTTON */
+/* ============================= */
+
+.btn {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+/* Spinner State */
+.btn.loading {
+    pointer-events: none;
+    color: transparent;
+}
+
+.btn.loading::after {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border: 2px solid transparent;
+    border-top: 2px solid var(--accent);
+    border-right: 2px solid var(--accent);
+    border-radius: 50%;
+    animation: spin 0.6s linear infinite;
+}
+
+/* Success State */
+.btn.success {
+    background: #22c55e;
+    border-color: #22c55e;
+    color: #fff;
+}
+
+.btn.success::after {
+    content: "✔";
+    position: absolute;
+    font-size: 18px;
+}
+
+/* Error State */
+.btn.error {
+    animation: shake 0.4s ease;
+    border-color: #ef4444;
+    color: #ef4444;
+}
+/* Shake animation for button */
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+
+/* Button error state */
+.btn.error {
+  background-color: #e74c3c; /* red */
+  color: white;
+  animation: shake 0.3s;
+}
+/* Animations */
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-4px); }
+    50% { transform: translateX(4px); }
+    75% { transform: translateX(-4px); }
+    100% { transform: translateX(0); }
+}
+
+/* ============================= */
+/* MOBILE HEADER FIX */
+/* ============================= */
+
+@media (hover: none) {
+
+    header h1 {
+        animation: shimmer 4s linear infinite;
+        background-size: 200% auto;
+        text-shadow: 0 0 6px var(--accent);
+        transform: none;
+    }
+
+    header h1:hover {
         animation: none;
         text-shadow: none;
+        transform: none;
+    }
+}
+/* ============================= */
+/* MOBILE NAVBAR FIX */
+/* ============================= */
+
+@media (hover: none) {
+
+    nav a {
+        transition: color 0.3s ease;
+    }
+
+    nav a:active {
+        color: var(--accent);
+        text-shadow: 0 0 6px var(--accent);
+    }
+
+    nav a:hover {
+        animation: none;
+        background: none;
+        -webkit-text-fill-color: var(--text);
         transform: none;
     }
 }

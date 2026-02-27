@@ -21,17 +21,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <!-- Security -->
-    <meta http-equiv="Content-Security-Policy" content="
+  <meta http-equiv="Content-Security-Policy"
+content="
 default-src 'self';
-img-src 'self' https:;
-style-src 'self' https://fonts.googleapis.com https://cdnjs.cloudflare.com;
-font-src https://fonts.gstatic.com https://cdnjs.cloudflare.com;
-script-src 'self' 'unsafe-inline';
-object-src 'none';
-base-uri 'self';
-form-action 'self';
-frame-ancestors 'none';
-upgrade-insecure-requests;">
+script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net;
+style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com;
+img-src 'self' data:;
+connect-src 'self' https://api.emailjs.com;
+">
     <meta name="robots" content="noarchive">
 
     <!-- Fonts & Icons -->
@@ -202,7 +199,9 @@ upgrade-insecure-requests;">
                     <input type="text" name="user_name" required placeholder="Your Name">
                     <input type="email" name="user_email" required placeholder="Your Email Address">
                     <textarea name="message" required placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn">Send Message</button>
+                    <button type="submit" class="btn" id="sendBtn">
+                        Send Message
+                    </button>
                 </form>
             </div>
 
@@ -222,7 +221,7 @@ upgrade-insecure-requests;">
 
     <!-- External JS -->
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-    <script src="script.js" defer></script>
+    <script src="script.js"></script>
 
 </body>
 
