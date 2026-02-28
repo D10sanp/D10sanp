@@ -21,14 +21,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <!-- Security -->
-  <meta http-equiv="Content-Security-Policy"
-content="
-default-src 'self';
-script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net;
-style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com;
-img-src 'self' data:;
-connect-src 'self' https://api.emailjs.com;
-">
+    <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self';
+    script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net;
+    style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com;
+    font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com data:;
+    img-src 'self' data:;
+    connect-src 'self' https://api.emailjs.com;">
     <meta name="robots" content="noarchive">
 
     <!-- Fonts & Icons -->
@@ -173,10 +172,6 @@ connect-src 'self' https://api.emailjs.com;
 
                 <div class="contact-item">
                     📧 <span id="email"></span>
-                </div>
-
-                <div class="contact-item">
-                    📱 <a href="+919170973194">+91 91*******4</a>
                 </div>
 
                 <div class="contact-item">

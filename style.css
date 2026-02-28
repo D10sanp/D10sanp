@@ -440,10 +440,15 @@ nav a:hover {
     }
 }
 /* ============================= */
-/* MOBILE CONTACT FORM FIX */
+/* MOBILE CONTACT FORM OPTIMIZED */
 /* ============================= */
 
 @media (max-width: 768px) {
+
+    .contact-container {
+        flex-direction: column;
+        gap: 35px;
+    }
 
     .contact-form {
         width: 100%;
@@ -453,19 +458,30 @@ nav a:hover {
     .contact-form input,
     .contact-form textarea {
         width: 100%;
-        font-size: 16px; /* Prevent zoom on iPhone */
+        font-size: 16px; /* prevents iOS zoom */
         padding: 14px;
+        border-radius: 12px;
     }
 
     .contact-form textarea {
-        min-height: 160px;
-        resize: vertical;
+        min-height: 180px;
+        resize: none; /* smoother UX on mobile */
     }
 
     .contact-form .btn {
         width: 100%;
         padding: 14px;
         font-size: 16px;
+        border-radius: 12px;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .social-links a {
+        width: 100%;
+        justify-content: center;
     }
 }
 
@@ -512,25 +528,11 @@ nav a:hover {
 
 /* Error State */
 .btn.error {
-    animation: shake 0.4s ease;
     border-color: #ef4444;
     color: #ef4444;
-}
-/* Shake animation for button */
-@keyframes shake {
-  0% { transform: translateX(0); }
-  25% { transform: translateX(-5px); }
-  50% { transform: translateX(5px); }
-  75% { transform: translateX(-5px); }
-  100% { transform: translateX(0); }
+    animation: shake 0.4s ease;
 }
 
-/* Button error state */
-.btn.error {
-  background-color: #e74c3c; /* red */
-  color: white;
-  animation: shake 0.3s;
-}
 /* Animations */
 @keyframes spin {
     to { transform: rotate(360deg); }
