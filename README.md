@@ -1,96 +1,52 @@
-<p align="center">
+<!-- =================== Animated Typing Intro =================== -->
+<div align="center">
+
 <img src="https://readme-typing-svg.herokuapp.com/?lines=Hi+I'm+Sandip+Dusadh;Aspiring+Data+Scientist;Machine+Learning+Enthusiast;Python+Developer;Welcome+to+my+GitHub+Profile!&center=true&width=500&height=45">
-</p>
 
-### 🚀 Aspiring Data Scientist | Machine Learning Enthusiast | Python Developer
+</div>
 
-# 💫 About Me
+<!-- =================== About Me =================== -->
+<div align="center">
 
-🔭 **I’m currently working on**
-Data science projects and exploring real-world applications of machine learning.
+## 💫 About Me
+🔭 I’m currently working on: Data science projects and real-world ML applications  
+👯 I’m looking to collaborate on: Data science, ML, and beginner-friendly DL projects  
+🤝 I’m looking for help with: Advanced deep learning concepts and end-to-end ML/DL models  
+🌱 I’m currently learning: Deep Learning, Neural Networks, model optimization  
+💬 Ask me about: Python, Data Science, ML, Exploratory Data Analysis  
+⚡ Fun fact: I enjoy turning raw data into meaningful insights and visual stories 📊
 
-👯 **I’m looking to collaborate on**
-Data science, machine learning, and beginner-friendly deep learning projects.
+</div>
 
-🤝 **I’m looking for help with**
-Understanding advanced deep learning concepts and building end-to-end ML/DL models.
+<!-- =================== Socials =================== -->
+<div align="center">
 
-🌱 **I’m currently learning**
-Deep Learning, Neural Networks, and model optimization techniques.
+### 🌐 Socials
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/sandip-dusadh-83264028a)
+[![Quora](https://img.shields.io/badge/Quora-%23B92B27.svg?logo=Quora&logoColor=white)](https://quora.com/profile/Sandip-290)
+[![Reddit](https://img.shields.io/badge/Reddit-%23FF4500.svg?logo=Reddit&logoColor=white)](https://reddit.com/user/Sanemi10)
+[![Email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:sandipdusadh50@gmail.com)
 
-💬 **Ask me about**
-Python, Data Science fundamentals, Machine Learning, and exploratory data analysis.
+</div>
 
-⚡ **Fun fact**
-I enjoy turning raw data into meaningful insights and visual stories 📊
+<!-- =================== Tech Stack Grid =================== -->
+<div align="center">
 
----
+### 💻 Tech Stack
 
-# 🌐 Socials
+<img src="https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54"/>
+<img src="https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white"/>
+<img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white"/>
+<img src="https://img.shields.io/badge/SQL-025E8C?style=for-the-badge&logo=postgresql&logoColor=white"/>
+<img src="https://img.shields.io/badge/PowerBI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black"/>
+<img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white"/>
+<img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white"/>
+<img src="https://img.shields.io/badge/Matplotlib-%23ffffff?style=for-the-badge&logo=Matplotlib&logoColor=black"/>
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin\&logoColor=white)](https://linkedin.com/in/sandip-dusadh-83264028a)
-[![Quora](https://img.shields.io/badge/Quora-%23B92B27.svg?logo=Quora\&logoColor=white)](https://quora.com/profile/Sandip-290)
-[![Reddit](https://img.shields.io/badge/Reddit-%23FF4500.svg?logo=Reddit\&logoColor=white)](https://reddit.com/user/Sanemi10)
-[![Email](https://img.shields.io/badge/Email-D14836?logo=gmail\&logoColor=white)](mailto:sandipdusadh50@gmail.com)
+</div>
 
----
-
-# 💻 Tech Stack
-
-## 🖥️ Languages
-
-![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge\&logo=c\&logoColor=white)
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge\&logo=python\&logoColor=ffdd54)
-![R](https://img.shields.io/badge/R-276DC3?style=for-the-badge\&logo=r\&logoColor=white)
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge\&logo=html5\&logoColor=white)
-![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge\&logo=css3\&logoColor=white)
-
----
-
-## ⚙️ Frameworks & Libraries
-
-![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge\&logo=django\&logoColor=white)
-![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge\&logo=flask\&logoColor=white)
-![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge\&logo=numpy\&logoColor=white)
-![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge\&logo=pandas\&logoColor=white)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge\&logo=Matplotlib\&logoColor=black)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge\&logo=scikit-learn\&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge\&logo=tensorflow\&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge\&logo=pytorch\&logoColor=white)
-
----
-
-## 🗄️ Databases
-
-![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge\&logo=mysql\&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/postgresql-4169E1.svg?style=for-the-badge\&logo=postgresql\&logoColor=white)
-
----
-
-## ☁️ Cloud & Deployment
-
-![Google Cloud](https://img.shields.io/badge/GoogleCloud-%234285F4.svg?style=for-the-badge\&logo=google-cloud\&logoColor=white)
-![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge\&logo=vercel\&logoColor=white)
-
----
-
-## 📊 Data Analysis & BI Tools
-
-![Power BI](https://img.shields.io/badge/PowerBI-F2C811?style=for-the-badge\&logo=powerbi\&logoColor=black)
-![RStudio](https://img.shields.io/badge/RStudio-75AADB?style=for-the-badge\&logo=rstudio\&logoColor=white)
-![Microsoft Excel](https://img.shields.io/badge/Microsoft_Excel-217346?style=for-the-badge\&logo=microsoft-excel\&logoColor=white)
-
----
-
-## 🛠️ Tools & Version Control
-
-![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge\&logo=git\&logoColor=white)
-![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge\&logo=github\&logoColor=white)
-![Microsoft Word](https://img.shields.io/badge/Microsoft_Word-2B579A?style=for-the-badge\&logo=microsoft-word\&logoColor=white)
-
----
-
-# 📊 GitHub Stats
+<!-- =================== GitHub Stats Side by Side =================== -->
+<div align="center">
 
 <table>
 <tr>
@@ -107,12 +63,41 @@ I enjoy turning raw data into meaningful insights and visual stories 📊
 </tr>
 </table>
 
-<p align="center">
-<img src="https://streak-stats.demolab.com?user=D10sanp&theme=radical&hide_border=true"/>
-</p>
+</div>
 
----
+<!-- =================== Contribution Snake =================== -->
+<div align="center">
 
-# 👀 Profile Views
+## 🐍 Contribution Snake
 
-[![](https://visitcount.itsvg.in/api?id=D10sanp\&icon=0\&color=3)](https://visitcount.itsvg.in)
+<img src="https://github.com/D10sanp/D10sanp/blob/output/github-contribution-grid-snake.svg"/>
+
+</div>
+
+<!-- =================== Activity Graph =================== -->
+<div align="center">
+
+## 📈 GitHub Activity
+
+![GitHub Activity Graph](https://activity-graph.herokuapp.com/graph?username=D10sanp&theme=radical&hide_border=true)
+
+</div>
+
+<!-- =================== GitHub Trophies =================== -->
+<div align="center">
+
+## 🏆 GitHub Trophies
+
+![GitHub Trophies](https://github-profile-trophy.vercel.app/?username=D10sanp&theme=radical&no-frame=true&margin-w=10)
+
+</div>
+
+</div>
+
+<!-- =================== Visitor Counter =================== -->
+<div align="center">
+
+## 👀 Profile Views
+[![](https://visitcount.itsvg.in/api?id=D10sanp&icon=0&color=3)](https://visitcount.itsvg.in)
+
+</div>
