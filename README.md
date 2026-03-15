@@ -1,3 +1,6 @@
+<p align="center">
+<img src="https://readme-typing-svg.herokuapp.com/?lines=Hi+I'm+Sandip+Dusadh;Aspiring+Data+Scientist;Machine+Learning+Enthusiast;Python+Developer;Welcome+to+my+GitHub+Profile!&center=true&width=500&height=45">
+</p>
 ## Hi there 👋 I'M Sandip Dusadh
 
 ### 🚀 Aspiring Data Scientist | Machine Learning Enthusiast | Python Developer
