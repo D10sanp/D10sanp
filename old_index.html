@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandip Dusadh – Data Scientist Portfolio</title>
+    <meta name="description" content="Portfolio of Sandip Dusadh – AI, ML & Data Science projects">
+    <meta name="keywords" content="Sandip Dusadh,Sandip, Data Scientist, AI, ML, Machine Learning, Portfolio, Projects">
+    <meta name="author" content="Sandip Dusadh">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Sandip Dusadh – Data Scientist Portfolio">
+    <meta property="og:description" content="Portfolio of Sandip Dusadh – AI, ML & Data Science projects">
+    <meta property="og:image" content="images/profile.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://d10sanp.github.io/D10sanp/">
+
+    <!-- Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Security -->
+    <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self';
+    script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net;
+    style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com;
+    font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com data:;
+    img-src 'self' data:;
+    connect-src 'self' https://api.emailjs.com;">
+    <meta name="robots" content="noarchive">
+
+    <!-- Fonts & Icons -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Sandip Dusadh",
+      "url": "https://yourdomain.com",
+      "sameAs": [
+        "https://linkedin.com/in/sandip-dusadh-83264028a",
+        "https://github.com/D10sanp"
+      ],
+      "jobTitle": "Aspiring Data Scientist",
+      "description": "Portfolio of Sandip Dusadh – AI, ML & Data Science projects"
+    }
+    </script>
+
+</head>
+
+<body>
+
+    <canvas id="particles"></canvas>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <div class="toggle" onclick="toggleMode()">⚡</div>
+    </nav>
+
+    <header>
+        <h1>Sandip Dusadh</h1>
+        <div class="typing" id="typing"></div>
+        <div class="resume-buttons">
+            <a href="Resume.pdf" class="btn resume-btn" target="_blank" rel="noopener noreferrer">
+                View Resume
+            </a>
+            <a href="Resume.pdf" class="btn resume-btn" target="_blank" rel="noopener noreferrer" download>
+                Download Resume
+            </a>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p style="text-align:center;max-width:700px;margin:auto;">
+            Hi, I’m <strong>Sandip Dusadh</strong>, Data Science student passionate about turning data into actionable
+            insights, building intelligent systems, and exploring AI & Machine Learning technologies
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+
+        <div class="skill">
+            Python
+            <div class="progress"><span data-width="90%"></span></div>
+        </div>
+
+        <div class="skill">
+            Machine Learning
+            <div class="progress"><span data-width="85%"></span></div>
+        </div>
+
+        <div class="skill">
+            Deep Learning
+            <div class="progress"><span data-width="80%"></span></div>
+        </div>
+
+        <div class="skill">
+            SQL
+            <div class="progress"><span data-width="75%"></span></div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="projects">
+
+            <div class="card" onclick="openModal('images/catdog.png','CNN Classifier Project')">
+                <img src="images/catdog.webp" loading="lazy">
+                <div class="card-content">
+                    <h3>Cat vs Dog CNN</h3>
+                    <p>Built a Convolutional Neural Network achieving high classification accuracy.</p>
+                    <p><strong>Tech:</strong> Python, TensorFlow, Keras, CNN, OpenCV</p>
+                    <a href="https://github.com/D10sanp/Explainable-Cat-vs-Dog-Image-Classification-Using-CNN"
+                        target="_blank" rel="noopener noreferrer" class="github-btn">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="card" onclick="openModal('images/avatar.png','3D Avatar Generator')">
+                <img src="images/avatar.webp" loading="lazy">
+                <div class="card-content">
+                    <h3>3D Avatar Generator</h3>
+                    <p>AI-based 3D reconstruction pipeline generating realistic avatars.</p>
+                    <p><strong>Tech:</strong> Python, OpenCV, 3D Modeling, Deep Learning</p>
+                    <a href="https://github.com/D10sanp/3D-Avatar" target="_blank" rel="noopener noreferrer"
+                        class="github-btn">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="card" onclick="openModal('images/loan.png','Loan Prediction Model')">
+                <img src="images/loan.webp" loading="lazy">
+                <div class="card-content">
+                    <h3>Loan Prediction</h3>
+                    <p>ML model predicting loan eligibility using structured financial data.</p>
+                    <p><strong>Tech:</strong> Python, Scikit-learn, Pandas, NumPy, Random Forest</p>
+                    <a href="https://github.com/D10sanp/loan_Eligibility" target="_blank" rel="noopener noreferrer"
+                        class="github-btn">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+
+        <div class="contact-container">
+
+            <div class="contact-info">
+                <h3>Get In Touch</h3>
+                <p>Feel free to reach out for collaborations or opportunities.</p>
+
+                <div class="contact-item">
+                    📧 <span id="email"></span>
+                </div>
+
+                <div class="contact-item">
+                    📍 Mumbai, India
+                </div>
+
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/sandip-dusadh-83264028a" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+
+                    <a href="https://github.com/D10sanp" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </div>
+            </div>
+
+            <div class="contact-form-container">
+                <form id="contact-form" class="contact-form">
+                    <input type="text" name="user_name" required placeholder="Your Name">
+                    <input type="email" name="user_email" required placeholder="Your Email Address">
+                    <textarea name="message" required placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn" id="sendBtn">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2026 Sandip Dusadh | Aspiring Data Scientist | Data Science & Analytics
+    </footer>
+
+    <div class="modal" id="modal" onclick="closeModal()">
+        <div class="modal-content">
+            <img id="modal-img">
+            <h3 id="modal-title"></h3>
+        </div>
+    </div>
+
+    <!-- External JS -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
