@@ -1598,6 +1598,8 @@
       font-weight: 700;
       border-radius: 3px;
       transition: all .2s;
+      clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 0 100%);
+
     }
 
     .form-btn-reset:hover {
@@ -1727,6 +1729,10 @@
       .project-card {
         grid-template-columns: 70px 1fr;
       }
+
+      .form-actions {
+        gap: 0.75rem;
+      }
     }
 
     /* ══════════════════════════════════════════
@@ -1789,10 +1795,12 @@
 
       .form-actions {
         flex-direction: column;
+        gap: 0.75rem;
       }
 
       .form-btn-reset {
         width: 100%;
+        padding: 1rem 1.5rem;
         justify-content: center;
       }
 
@@ -1816,6 +1824,16 @@
 
       .hero-stats {
         flex-direction: column;
+      }
+
+      .form-btn {
+        padding: 0.875rem 1.25rem;
+        font-size: 0.9rem;
+      }
+
+      .form-btn-reset {
+        padding: 0.875rem 1.25rem;
+        font-size: 0.65rem;
       }
     }
   </style>
@@ -2366,8 +2384,8 @@
             <textarea class="form-textarea" placeholder="What's on your mind?" required></textarea>
           </div>
           <div class="form-actions">
-            <button type="reset" class="form-btn-reset">Clear</button>
             <button type="submit" class="form-btn" id="formBtn">Send Message →</button>
+            <button type="reset" class="form-btn-reset">Clear</button>
           </div>
         </form>
       </div>
