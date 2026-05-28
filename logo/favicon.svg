@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <rect width="100%" height="100%" rx="12" fill="#0f1319"/>
+  <circle cx="32" cy="32" r="28" fill="#f9b407"/>
+  <text x="32" y="36" font-family="Inter, Arial, sans-serif" font-size="26" fill="#060810" text-anchor="middle" dominant-baseline="middle" font-weight="700">SD</text>
+</svg>
