@@ -60,6 +60,24 @@
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 ![Microsoft Word](https://img.shields.io/badge/Microsoft_Word-2B579A?style=for-the-badge&logo=microsoft-word&logoColor=white)
 
+# 🚀 Featured Projects
+
+### 📊 Customer Churn Prediction
+- Built a machine learning model to predict customer churn.
+- Technologies: Python, Pandas, Scikit-Learn, Power BI.
+
+### 🏠 House Price Prediction
+- Developed a regression model for house price estimation.
+- Technologies: Python, NumPy, Matplotlib.
+
+### 🤖 Image Classification using CNN
+- Deep Learning model for image classification.
+- Technologies: TensorFlow, Keras, OpenCV.
+
+### 📈 Sales Dashboard
+- Interactive Power BI dashboard for business insights.
+- Technologies: Power BI, Excel, SQL.
+
 # 📊 GitHub Stats:
 <!-- =================== GitHub Stats Side by Side =================== -->
 <div align="center">
@@ -82,7 +100,35 @@
 <br>
 <img src="https://streak-stats.demolab.com?user=D10sanp&theme=radical&hide_border=true" />
 
+# 🏆 GitHub Trophies
+
+![](https://github-profile-trophy.vercel.app/?username=D10sanp&theme=radical&no-frame=true&no-bg=true&margin-w=4)
+
+
 </div>
 
 ---
 [![](https://visitcount.itsvg.in/api?id=D10sanp&icon=0&color=3)](https://visitcount.itsvg.in)
+
+# 📈 Contribution Graph
+
+[![Sandip's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=D10sanp&theme=react-dark)](https://github.com/D10sanp)
+
+# 🔥 Contribution Snake
+
+<picture>
+  <source media="(prefers-color-scheme: dark)"
+    srcset="https://raw.githubusercontent.com/D10sanp/D10sanp/output/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)"
+    srcset="https://raw.githubusercontent.com/D10sanp/D10sanp/output/github-contribution-grid-snake.svg">
+  <img alt="github contribution grid snake animation"
+    src="https://raw.githubusercontent.com/D10sanp/D10sanp/output/github-contribution-grid-snake.svg">
+</picture>
+
+# 💡 Random Dev Quote
+
+![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
+
+# 👀 Visitors
+
+![](https://visitcount.itsvg.in/api?id=D10sanp&icon=5&color=12)
