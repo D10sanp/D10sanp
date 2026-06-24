@@ -1,5 +1,9 @@
-## Hi there 👋 I'M Sandip Dusadh
-### 🚀 Aspiring Data Scientist | Machine Learning Enthusiast | Python Developer
+<p align="center"> <img src="https://capsule-render.vercel.app/api?type=waving&color=0:8A2BE2,100:FF1493&height=200&section=header&text=Sandip%20Dusadh&fontSize=50&fontColor=fff&animation=fadeIn" /> </p>
+<h1 align="center">Hi 👋, I'm Sandip Dusadh</h1>
+
+<h3 align="center"> Aspiring Data Scientist • Machine Learning Enthusiast • Python Developer </h3>
+
+<p align="center"> Passionate about transforming raw data into actionable insights through Machine Learning, Data Analysis, and Artificial Intelligence. </p>
 # 💫 About Me:
 <br>🔭 I’m currently working on  <br>Data science projects and exploring real-world applications of machine learning.<br><br>👯 I’m looking to collaborate on  <br>Data science, machine learning, and beginner-friendly deep learning projects.<br><br>🤝 I’m looking for help with  <br>Understanding advanced deep learning concepts and building end-to-end ML/DL models.<br><br>🌱 I’m currently learning  <br>Deep Learning, Neural Networks, and model optimization techniques.<br><br>💬 Ask me about  <br>Python, Data Science fundamentals, Machine Learning, and exploratory data analysis.<br><br>⚡ Fun fact  <br>I enjoy turning raw data into meaningful insights and visual stories 📊
 
@@ -82,48 +86,33 @@
 <!-- =================== GitHub Stats Side by Side =================== -->
 <div align="center">
 
-<table>
-<tr>
-<td>
+<table> <tr> <td>
 
 <img src="https://github-readme-stats.vercel.app/api?username=D10sanp&show_icons=true&theme=radical" height="170"/>
 
-</td>
-<td>
+</td> <td>
 
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=D10sanp&layout=compact&theme=radical" height="170"/>
 
-</td>
-</tr>
-</table>
-<!-- Contribution Streak -->
+</td> </tr> </table>
+
 <br>
+
 <img src="https://streak-stats.demolab.com?user=D10sanp&theme=radical&hide_border=true" />
-
-# 🏆 GitHub Trophies
-
-![](https://github-profile-trophy.vercel.app/?username=D10sanp&theme=radical&no-frame=true&no-bg=true&margin-w=4)
-
 
 </div>
 
----
-[![](https://visitcount.itsvg.in/api?id=D10sanp&icon=0&color=3)](https://visitcount.itsvg.in)
+# 🏆 GitHub Trophies
 
+[![trophy](https://github-profile-trophy.vercel.app/?username=D10sanp)](https://github.com/ryo-ma/github-profile-trophy)
+</div>
 # 📈 Contribution Graph
 
 [![Sandip's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=D10sanp&theme=react-dark)](https://github.com/D10sanp)
 
 # 🔥 Contribution Snake
 
-<picture>
-  <source media="(prefers-color-scheme: dark)"
-    srcset="https://raw.githubusercontent.com/D10sanp/D10sanp/output/github-contribution-grid-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)"
-    srcset="https://raw.githubusercontent.com/D10sanp/D10sanp/output/github-contribution-grid-snake.svg">
-  <img alt="github contribution grid snake animation"
-    src="https://raw.githubusercontent.com/D10sanp/D10sanp/output/github-contribution-grid-snake.svg">
-</picture>
+<picture> <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/D10sanp/D10sanp/output/github-contribution-grid-snake-dark.svg"> <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/D10sanp/D10sanp/output/github-contribution-grid-snake.svg"> <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/D10sanp/D10sanp/output/github-contribution-grid-snake.svg"> </picture>
 
 # 💡 Random Dev Quote
 
@@ -132,3 +121,15 @@
 # 👀 Visitors
 
 ![](https://visitcount.itsvg.in/api?id=D10sanp&icon=5&color=12)
+
+🤝 Let's Connect
+
+💼 Open to internships, freelance opportunities, collaborations, and Data Science / Machine Learning projects.
+
+📧 Email: sandipdusadh50@gmail.com
+
+🔗 LinkedIn: https://linkedin.com/in/sandip-dusadh-83264028a
+
+💬 Feel free to reach out if you'd like to collaborate on ML, Data Science, Python, or Deep Learning projects.
+
+⭐ If you like my work, consider following my GitHub profile and checking out my repositories!
