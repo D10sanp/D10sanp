@@ -102,10 +102,6 @@
 
 </div>
 
-# 🏆 GitHub Trophies
-
-[![trophy](https://github-profile-trophy.vercel.app/?username=D10sanp)](https://github.com/ryo-ma/github-profile-trophy)
-</div>
 # 📈 Contribution Graph
 
 [![Sandip's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=D10sanp&theme=react-dark)](https://github.com/D10sanp)
