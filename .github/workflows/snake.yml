@@ -12,7 +12,6 @@ jobs:
 generate:
 runs-on: ubuntu-latest
 
-```
 steps:
   - name: Generate Snake
     uses: Platane/snk@v3
@@ -28,4 +27,3 @@ steps:
       github_token: ${{ secrets.GITHUB_TOKEN }}
       publish_branch: output
       publish_dir: dist
-```
