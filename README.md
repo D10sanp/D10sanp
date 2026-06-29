@@ -102,9 +102,6 @@
 
 </div>
 
-# 📈 Contribution Graph
-
-[![Sandip's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=D10sanp&theme=react-dark)](https://github.com/D10sanp)
 
 # 🔥 Contribution Snake
 
@@ -114,9 +111,7 @@
 
 ![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
 
-# 👀 Visitors
 
-![](https://visitcount.itsvg.in/api?id=D10sanp&icon=5&color=12)
 
 🤝 Let's Connect
 
